@@ -11,11 +11,13 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 public class GuestBook implements ActionListener {
+	
 	JFrame f;
 	JPanel p;
 	JButton a;
 	JButton b;
-	ArrayList x = new ArrayList();
+	ArrayList<String> x = new ArrayList<String>();
+	
 	public static void main(String[] args) {
 		GuestBook c = new GuestBook();
 		c.play();
@@ -33,7 +35,9 @@ public class GuestBook implements ActionListener {
 	p.add(a);
 	p.add(b);
 	a.addActionListener(this);
-	a.addActionListener(this);
+	b.addActionListener(this);
+	f.pack();
+	f.setVisible(true);
 	}
 	@Override
 	public void actionPerformed(ActionEvent e) {
@@ -44,8 +48,11 @@ public class GuestBook implements ActionListener {
 			x.add(i);
 		}
 		if(buttonClicked==b) {
-			JOptionPane.showMessageDialog(null, x);
-		}
+			for (int i = 0; i < x.size(); i++) {
+				String a = x.get(i);
+				System.out.println("Guest #"+i+" "+a);
+			}
+			}
 		
 	}
 	
