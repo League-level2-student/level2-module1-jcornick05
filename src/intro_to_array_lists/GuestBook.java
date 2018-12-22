@@ -50,7 +50,7 @@ public class GuestBook implements ActionListener {
 		if(buttonClicked==b) {
 			for (int i = 0; i < x.size(); i++) {
 				String a = x.get(i);
-				System.out.println("Guest #"+i+" "+a);
+				System.out.println("Guest #"+i+1+" "+a);
 			}
 			}
 		

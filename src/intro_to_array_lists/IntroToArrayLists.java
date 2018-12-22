@@ -14,18 +14,33 @@ public class IntroToArrayLists {
 		a.add("w");
 		a.add("l");
 		//3. Print all the Strings using a standard for-loop
-		for (int i = 0; i < a.size(); i++) {
-			String s = a.get(i);
-			System.out.println(s);
-		}
+//	for (int i = 0; i < a.size(); i++) {
+//			String s = a.get(i);
+//			System.out.println(s);
+//		}
 		//4. Print all the Strings using a for-each loop
-		for (String i: a) {
-			System.out.println(i);
-		}
+//		for (String i: a) {
+//			System.out.println(i);
+//		}
 		//5. Print only the even numbered elements in the list.
+//		for (int i = 0; i < a.size(); i+=2) {
+//			String s = a.get(i);
+//			System.out.println(s);
+//		}
+		
 		
 		//6. Print all the Strings in reverse order.
+//		for (int i = a.size()-1; i > -1; i--) {
+//			String s = a.get(i);
+//			System.out.println(s);
+//		}
 		
 		//7. Print only the Strings that have the letter 'e' in them.
+		for (int i = 0; i < a.size(); i++) {
+		if (a.get(i).contains("e")) {
+			System.out.println(a.get(i));
+		}
+		
 	}
+}
 }
